@@ -1,17 +1,17 @@
-class Producto{
+export default class Producto{
     static idCounter = 0;
 
-    constructor(nombre, precio, categoria,stockDisponible) {
+    constructor(nombre, precio, cantidad,categoria) {
         this.id = Producto.incrementarId();
         this.nombre = nombre;
         this.precio = precio;
+        this.cantidad = cantidad;
         this.categoria = categoria;
-        this.stockDisponible = stockDisponible;
         this.subTotal = this.calcularSubTotal();
     }
 
     calcularSubTotal() {
-        return this.precio * this.stockDisponible;
+        return this.precio * this.cantidad;
     }
 
     static incrementarId() {
