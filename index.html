@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
     <title>SuperMercado</title>
-    <script defer type="module" src="./main.js"></script>
 </head>
 <body>
     <header class="tituloContainer">
@@ -21,25 +20,17 @@
 
     <main id="containerCards">
         <div class="contenedorBoxes">
-            <section class="productosContainer">
-                <img 
-                    src="https://arcorencasa.com/wp-content/uploads/2024/10/20241008-13244.webp" 
-                    alt="Lentejas"
-                >
-                <h2>Lentejas Enlatadas</h2>
-                <p>Categoria: Almacen</p>
-                <p>Precio: $800</p>
-                <button>Agregar al carrito</button>
-            </section>
         </div>
     </main>
-    <aside>
-        <button id="cerrar-carrito" aria-label="Cerrar Carrito de compras"></button>
+    <aside class="carrito-oculto" id="carrito">
+        <button id="cerrar-carrito">✖</button>
         <h2>Tu carrito</h2>
         <p>Total: </p>
     </aside>
     <footer class="footerContainer">
         <p>© 2025 SuperMercado. Todos los derechos reservados.</p>
     </footer>
+
+    <script type="module" src="./main.js"></script>
 </body>
 </html>
