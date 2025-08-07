@@ -14,6 +14,7 @@
     <header class="tituloContainer">
         <button id="card-button" class="cart-button" aria-label="Abrir carrito">
             <span class="material-icons">shopping_cart</span>
+            <span id="contador-carrito" class="contador-carrito">0</span>
         </button>
     <h1>Bienvenido al SuperMercado</h1>
     </header>
@@ -23,10 +24,13 @@
         </div>
     </main>
     <aside class="carrito-oculto" id="carrito">
-        <button id="cerrar-carrito">✖</button>
-        <h2>Tu carrito</h2>
-        <p>Total: </p>
+            <button id="cerrar-carrito">✖</button>
+            <h2>Tu carrito</h2>
+            <div id="carrito-items"></div>
+            <p id="total-carrito">Total: </p>
+            <button id="limpiar-carrito">Limpiar carrito</button>
     </aside>
+
     <footer class="footerContainer">
         <p>© 2025 SuperMercado. Todos los derechos reservados.</p>
     </footer>
